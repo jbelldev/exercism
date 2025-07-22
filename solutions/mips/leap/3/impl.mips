@@ -1,0 +1,20 @@
+.globl is_leap_year
+
+.text
+is_leap_year:
+        # If $a0 % 400 == 0, set $v0 to 1 and go to the end
+        rem $v0, $a0, 400
+        seq $v0, $v0, $zero
+        bnez $v0, return
+
+        # If $a0 % 100 != 0, set $v0 to 0 and go to the end 
+        rem $v0, $a0, 100
+        sne $v0, $v0, $zero
+        beqz $v0, return
+
+        # If $a0 % 4 == 0, set $v0 to 1 and go to the end
+        rem $v0, $a0, 4
+        seq $v0, $v0, $zero
+
+return:
+        jr $ra
