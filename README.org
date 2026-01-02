@@ -1,0 +1,13 @@
+#+title: Exercism Solutions
+#+author: Jordan Bell
+
+A simple repo holding backups to all my [[https://exercism.org/][Exercism]] exercises (a great service that you should totally use).
+
+In the name of practicing more programming and exploring more programming languages, I'm committing to at least one commit a day in 2026 across my projects, which includes the solutions found here.
+
+For posterity, my general workflow is to:
+
+1) Create a viable solution to an exercise, and submit to Exercism
+2) Let the [[https://exercism.org/blog/sync-to-github][GitHub Syncer]] submit a pull request with the solution
+3) Annotate with any minor notes from what I learned on the exercise
+4) Approve and merge
